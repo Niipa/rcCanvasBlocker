@@ -1,0 +1,13 @@
+{
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "src/scramble.js" ],
+      "match_about_blank": true,
+      "matches": [ "<all_urls>" ],
+      "run_at": "document_start"
+   } ],
+   "manifest_version": 2,
+   "name": "canvas_scrambler",
+   "permissions": [ "*://*/*", "notifications", "storage", "webNavigation" ],
+   "version": "1"
+}
